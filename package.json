@@ -1,0 +1,25 @@
+{
+  "name": "graphql-zesty",
+  "version": "0.0.1",
+  "description": "Connector to a Zesty.io Instance to Make a GraphQL server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zesty-io",
+    "graphql",
+    "headless",
+    "cms"
+  ],
+  "author": "Zesty.io Platform, Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.0",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1",
+    "graphql-yoga": "^1.17.4",
+    "node-fetch": "^2.6.0"
+  }
+}
