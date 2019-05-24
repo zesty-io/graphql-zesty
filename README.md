@@ -2,7 +2,7 @@
 
 # usage
 
-Data is from remote files on zesty.io, so it can run stand along
+Data is from hardcoded remote files from a zesty.io content instance, so it runs stand alone
 
 `./node server.js`
 
