@@ -15,7 +15,7 @@ type Author {
   articles: [Article]
 }
 type Query {
-  articles: [Article]
+  articles(search: String): [Article]
   article(zuid: ID!): Article
   authors: [Author]
   author(zuid: ID!): Author

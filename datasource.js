@@ -6,16 +6,16 @@ export class MvrpAPI extends RESTDataSource {
     this.baseURL = 'https://ab90f66abb07cc8a49695b0b8cf92ab8-dev.preview.zestyio.com/graphql/';
   }
 
-  async getAllArticles() {
-    return this.get('articles.json');
+  async getAllArticles(search) {
+    return await this.get('articles.json', {
+      search: search
+    });
   }
 
   async getArticle(zuid) {
-    const result = await this.get('articles.json', {
+    return await this.get('articles.json', {
       zuid: zuid
     });
-
-    return result;
   }
 
   async getAllAuthors() {
