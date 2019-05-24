@@ -1,0 +1,22 @@
+
+
+type Article {
+  zuid: ID!
+  title: String!
+  body: String!
+  author: Author!
+}
+
+type Author {
+  zuid: ID!
+  name: String!
+  email: String!
+  image: String!
+  articles: [Article]
+}
+type Query {
+  articles(search: String): [Article]
+  article(zuid: ID!): Article
+  authors: [Author]
+  author(zuid: ID!): Author
+}
