@@ -21,21 +21,16 @@ function resolverObject (obj) {
 
   return {
     Query: {
-      article: (root, { zuid }, { dataSources }) =>
-        dataSources.mvrpAPI.getArticle(zuid),
+      article: (root, { zuid }, { dataSources }) => dataSources.mvrpAPI.getArticle(zuid),
       articles: (root, args, { dataSources }) => {
         let search = args.hasOwnProperty('search') ? args.search : "";
         return dataSources.mvrpAPI.getAllArticles(search)
       },
-      author: (root, { zuid }, { dataSources }) =>
-        dataSources.mvrpAPI.getAuthor(zuid),
+      author: (root, { zuid }, { dataSources }) => dataSources.mvrpAPI.getAuthor(zuid),
       authors: (root, args, { dataSources }) => dataSources.mvrpAPI.getAllAuthors(),
     },
     Article: {
-      author: (root, args, { dataSources }) => {
-        // one to one relationship
-        return dataSources.mvrpAPI.getAuthor(root.author)
-      },
+      author: (root, args, { dataSources }) => dataSources.mvrpAPI.getAuthor(root.author),
     },
     Author: {
       articles: (root, args, { dataSources }) => root.articles.map(zuid => dataSources.mvrpAPI.getArticle(zuid)),
@@ -56,5 +51,5 @@ const server = new ApolloServer({
 });
 
 server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
+  console.log(`Server ready at ${url}`);
 });
