@@ -4,7 +4,7 @@ import { MvrpAPI } from './datasource';
 import resolvers from './resolvers';
 
 const fs = require('fs');
-const typeDefs = gql`${fs.readFileSync(__dirname.concat('/definitions/apolloSchema.graphql'), 'utf8')}`;
+const typeDefs = gql`${fs.readFileSync(__dirname.concat('/schema.graphql'), 'utf8')}`;
 
 
 const server = new ApolloServer({

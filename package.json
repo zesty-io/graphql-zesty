@@ -14,6 +14,7 @@
   "dependencies": {
     "apollo-datasource-rest": "^0.1.4",
     "apollo-server": "^2.0.5",
+    "file-saver": "^2.0.2",
     "graphql": "^0.13.2"
   },
   "devDependencies": {
@@ -21,6 +22,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r esm server.js"
+    "start": "node -r esm server.js",
+    "getFiles": "node getfiles.js"
   }
 }
