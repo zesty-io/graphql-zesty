@@ -1,3 +1,5 @@
+![GQL Logo](https://res.cloudinary.com/practicaldev/image/fetch/s--M5dHch5L--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AR6WHuWI0M9I4t-og2yNq-w.png)
+
 ## GraphQL for Zesty.io Content Instances
 
 A GraphQL interface using node and apollo that consumes WebEngine endpoints. 
