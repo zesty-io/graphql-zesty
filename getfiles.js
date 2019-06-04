@@ -1,9 +1,9 @@
 if (process.argv.length <= 2) {
   
-  console.error('Expected at least one argument!');
+  console.error('Expecting a argument which is your zesty.io instance url');
   
 }
-let base = process.argv[2]
+let base = process.argv[2];
 
 const http = require('http');
 const https = require('https');
