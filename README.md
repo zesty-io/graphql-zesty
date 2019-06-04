@@ -1,4 +1,4 @@
-![GQL Logo](https://res.cloudinary.com/practicaldev/image/fetch/s--M5dHch5L--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AR6WHuWI0M9I4t-og2yNq-w.png)
+![GQL Logo](https://repository-images.githubusercontent.com/188321095/1f5ffe80-86b8-11e9-9fdc-b077c615663a)
 
 ## GraphQL for Zesty.io Content Instances
 
