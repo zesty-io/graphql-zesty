@@ -1,17 +1,17 @@
-## GraphQL for Zesty.io Content instances
+## GraphQL for Zesty.io Content Instances
 
-# usage
+A GraphQL interface using node and apollo that consumes WebEngine endpoints. 
 
-Data is from hardcoded remote files from a zesty.io content instance, so it runs stand alone
+# How to Use
+Requires Node 10 or above and NPM 4+. Fork this repository and pull it to your local. 
 
-`./node server.js`
-
-navigate in browser
-
-`localhost:4000`
-
-### Resources and guides used to build this example
-
-* Node Express Server https://medium.com/codingthesmartway-com-blog/creating-a-graphql-server-with-node-js-and-express-f6dddc5320e1
-* Rest API implementation https://graphql.org/blog/rest-api-graphql-wrapper/
-* Rest Wrapper for GraphQL https://www.prisma.io/blog/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d
+1. Log into Zesty.io
+2. Open the manager interface for the instance you want to access GraphQL
+3. In manager, Go to your Schema > settings area
+4. Navigate to Developer settings
+5. Click GraphQL to turn on
+6. Set GraphQL origin to * (this can later be tied to your remote)
+7. Open this repo's directory in your terminal
+8. cli: `node getfiles.js YOUR_INSTANCE_URL` (use your stage for testing)
+9. cli: `npm start`
+10. navigate in browser `localhost:4000`
