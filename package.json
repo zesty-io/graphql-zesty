@@ -12,16 +12,15 @@
   "description": "",
   "main": "datasource.js",
   "dependencies": {
-    "apollo-datasource-rest": "^0.1.4",
-    "apollo-server": "2.5.0",
-    "file-saver": "2.0.5",
-    "graphql": "0.13.2"
-  },
-  "devDependencies": {
-    "esm": "^3.2.25"
+    "@graphql-tools/schema": "^7.1.5",
+    "apollo-datasource-rest": "0.1.5",
+    "apollo-server": "^3.0.2",
+    "file-saver": "2.0.2",
+    "graphql": "^15.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r esm server.js"
+    "setup": "node getfiles.js",
+    "start": "node index.js"
   }
 }
