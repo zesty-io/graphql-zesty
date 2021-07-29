@@ -13,7 +13,7 @@
   "main": "datasource.js",
   "dependencies": {
     "apollo-datasource-rest": "^0.1.4",
-    "apollo-server": "2.5.0",
+    "apollo-server": "2.14.2",
     "file-saver": "2.0.5",
     "graphql": "0.13.2"
   },
