@@ -1,0 +1,5 @@
+settings: ## Initial site settings can be overridden here. All initial settings have a default value if not set in YAML.
+  developer:
+    gql: '1'
+    gql_cors: '*'
+  
