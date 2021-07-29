@@ -13,12 +13,12 @@
   "main": "datasource.js",
   "dependencies": {
     "apollo-datasource-rest": "^0.1.4",
-    "apollo-server": "^2.0.5",
-    "file-saver": "^2.0.2",
-    "graphql": "^0.13.2"
+    "apollo-server": "2.5.0",
+    "file-saver": "2.0.5",
+    "graphql": "0.13.2"
   },
   "devDependencies": {
-    "esm": "^3.0.79"
+    "esm": "^3.2.25"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

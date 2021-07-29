@@ -1,7 +1,7 @@
 
 import { ApolloServer, gql } from 'apollo-server';
-import { MvrpAPI } from './datasource';
-import resolvers from './resolvers';
+import { MvrpAPI } from './datasource.js';
+import resolvers from './resolvers.js';
 
 const fs = require('fs');
 const typeDefs = gql`${fs.readFileSync(__dirname.concat('/schema.graphql'), 'utf8')}`;
