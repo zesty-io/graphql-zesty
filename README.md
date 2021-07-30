@@ -17,4 +17,4 @@ Requires Node 10 or above and NPM 6+. Fork this repository and pull it to your l
 8. run `npm install`
 9. cli: `npm run setup -- https://YOUR.INSTANCE.URL` (use your stage [HASH]-dev.webengine.zesty.io url for testing)
 10. cli: `npm start`
-11. navigate in browser `localhost:4000`
+11. navigate in browser `[localhost:4000](http://localhost:4000/)`

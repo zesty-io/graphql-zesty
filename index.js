@@ -1,7 +1,7 @@
 
 const { ApolloServer } = require('apollo-server');
 const { makeExecutableSchema } = require('@graphql-tools/schema');
-const  MvrpAPI  =  require('./datasource.js');
+const  ZestyGQLAPI  =  require('./datasource.js');
 const  { resolvers }  = require('./resolvers.js');
 const { readFileSync } = require('fs')
 
@@ -16,7 +16,7 @@ const schema = makeExecutableSchema({
 const server = new ApolloServer({
   schema: schema,
   dataSources: () => ({
-    mvrpAPI: new MvrpAPI(),
+    zestyGQLAPI: new ZestyGQLAPI(),
   }),
   connectToDevTools: true
 });
