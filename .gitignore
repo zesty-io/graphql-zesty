@@ -1,4 +1,5 @@
-# for zesty, we do not want to commit our resolver, schema, and datasource files for now, if you fork and run your own, change this
+# for the zesty gql example, we do not want to commit our resolver.js, schema.graphql, and datasource.js files 
+# if you fork and run your own, you may edit these out
 resolvers.js
 schema.graphql
 datasource.js
