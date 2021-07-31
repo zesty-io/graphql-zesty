@@ -10,7 +10,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "description": "",
-  "main": "datasource.js",
+  "main": "index.js",
   "dependencies": {
     "@graphql-tools/schema": "^7.1.5",
     "apollo-datasource-rest": "0.1.5",
@@ -21,6 +21,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "node getfiles.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "gcloud builds submit --tag gcr.io/zesty-dev/zestygql --project zesty-dev",
+    "deploy": "gcloud run deploy zestygql --image gcr.io/zesty-dev/zestygql --allow-unauthenticated --region us-central1"
   }
 }

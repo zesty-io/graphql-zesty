@@ -1,0 +1,9 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+
+# important to include as the .gitignore excludes these files
+!resolvers.js
+!schema.graphql
+!datasource.js
