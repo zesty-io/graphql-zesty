@@ -6,14 +6,15 @@ const  resolvers  = require('./resolvers.js');
 const { readFileSync } = require('fs')
 
 const typeDefs = readFileSync('./schema.graphql').toString('utf-8') 
-const logger = { log: e => console.log(e) 
-}
+const logger = { log: e => console.log(e) }
+
+const port = process.env.PORT || 8080;
+
 const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
   logger
 })
-
 
 const server = new ApolloServer({
   schema: schema,
@@ -22,6 +23,6 @@ const server = new ApolloServer({
   })
 });
 
-server.listen().then(({ url }) => {
+server.listen({ port: port }).then(({ url }) => {
   console.log(`Server ready at ${url}`);
 });
