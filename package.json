@@ -25,7 +25,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "node getfiles.js",
     "start": "node index.js",
-    "build": "gcloud builds submit --tag gcr.io/zesty-dev/zestygql --project zesty-dev",
-    "deploy": "gcloud run deploy zestygql --image gcr.io/zesty-dev/zestygql --allow-unauthenticated --region us-central1"
+    "build": "gcloud builds submit --tag gcr.io/zesty-dev/zestygql --ignore-file .gcloudignore --project zesty-dev .",
+    "deploy": "gcloud run deploy zestygql --image gcr.io/zesty-dev/zestygql --allow-unauthenticated --region us-central1 --platform managed  --project zesty-dev",
+    "clean": "rm resolvers.js && rm datasource.js && rm schema.graphql"
   }
 }
