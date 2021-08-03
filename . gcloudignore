@@ -1,0 +1,6 @@
+#!include:.gitignore
+
+# important to include as the .gitignore may excludes these files from gcloud build
+!resolvers.js
+!schema.graphql
+!datasource.js
