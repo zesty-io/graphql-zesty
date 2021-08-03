@@ -1,4 +1,5 @@
-![GQL Logo](https://repository-images.githubusercontent.com/188321095/1f5ffe80-86b8-11e9-9fdc-b077c615663a)
+![image](https://user-images.githubusercontent.com/729972/128081791-48ecebbc-5600-465c-bcd4-fdb14f49556f.png)
+
 
 ## GraphQL for Zesty.io Content Instances
 
