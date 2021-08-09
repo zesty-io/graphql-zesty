@@ -1,5 +1,16 @@
-settings: ## Initial site settings can be overridden here. All initial settings have a default value if not set in YAML.
-  developer:
-    gql: '1'
-    gql_cors: '*'
+## Initial site settings can be overridden here. All initial settings have a default value if not set in YAML.
+settings: 
+  - developer:
+      - gql: 
+          label : GraphQL Endpoints
+          datatype : checkbox
+          options : '0,1'
+          description : Turns on endpoints from /-/gql/ that are used to feed a GraphQL server
+          value : 0
+      - gql_cors:
+          label : GraphQL CORS Header
+          datatype : text
+          options : ''
+          description : 'Cross Origin Request control to restrict requests to the origin specified, * is any'
+          value : '*'
   
